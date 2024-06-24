@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.contentprovider">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pupyu"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.contentprovider.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.contentprovider.Principal"
+
+            android:parentActivityName="com.example.contentprovider.MainActivity">
+            <!-- Soporte para versiones 4.0 o menores -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.contentprovider.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.contentprovider.vista.MascotasFavoritas"
+            android:label="@string/menu_favoritos"
+            android:parentActivityName="com.example.contentprovider.Principal">
+            <!-- Soporte para versiones 4.0 o menores -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.contentprovider.Principal" />
+        </activity>
+        <activity
+            android:name="com.example.contentprovider.Contacto"
+            android:label="@string/menu_contacto"
+            android:parentActivityName="com.example.contentprovider.Principal">
+            <!-- Soporte para versiones 4.0 o menores -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.contentprovider.Principal" />
+        </activity>
+        <activity android:name="com.example.contentprovider.About"
+            android:label="@string/menu_acerca_de"
+            android:parentActivityName="com.example.contentprovider.Principal">
+            <!-- Soporte para versiones 4.0 o menores -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.contentprovider.Principal" />
+        </activity>
+    </application>
+
+</manifest>

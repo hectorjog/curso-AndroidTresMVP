@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    >
+    <include
+        android:id="@+id/miActionBar"
+        layout="@layout/actionbar">
+    </include>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/app_descripcion"
+            android:textAlignment="center" />
+        <ImageView
+            android:id="@+id/ivPetagram"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pupyu"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/app_version"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dominio"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/derechos"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
